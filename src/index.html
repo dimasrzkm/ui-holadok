@@ -4,8 +4,145 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./assets/css/style.css" rel="stylesheet" />
+    <title>UI | Holadok</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+    </style>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <body class="min-h-screen">
+    <div class="container h-screen mx-auto">
+      <nav class="flex items-center mt-5 tracking-tight">
+        <div class="flex items-center gap-[15px] mr-20 font-sanspro">
+          <svg
+            width="24"
+            height="25"
+            class="stroke-[#101C45]"
+            viewBox="0 0 24 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.8 2.79999C4.80356 2.86282 4.8268 2.92295 4.86641 2.97185C4.90603 3.02075 4.96002 3.05595 5.02075 3.07248C5.08148 3.089 5.14586 3.08601 5.2048 3.06392C5.26373 3.04184 5.31422 3.00178 5.34913 2.94941C5.38404 2.89705 5.4016 2.83503 5.39932 2.77213C5.39704 2.70924 5.37504 2.64866 5.33643 2.59896C5.29782 2.54926 5.24456 2.51296 5.18418 2.4952C5.12381 2.47744 5.05937 2.47911 5 2.49999H4C3.46957 2.49999 2.96086 2.7107 2.58579 3.08578C2.21071 3.46085 2 3.96956 2 4.49999V9.49999C2 11.0913 2.63214 12.6174 3.75736 13.7426C4.88258 14.8678 6.4087 15.5 8 15.5C9.5913 15.5 11.1174 14.8678 12.2426 13.7426C13.3679 12.6174 14 11.0913 14 9.49999V4.49999C14 3.96956 13.7893 3.46085 13.4142 3.08578C13.0391 2.7107 12.5304 2.49999 12 2.49999H11C10.9803 2.51969 10.9647 2.54307 10.954 2.56881C10.9434 2.59455 10.9379 2.62213 10.9379 2.64999C10.9379 2.67785 10.9434 2.70543 10.954 2.73117C10.9647 2.75691 10.9803 2.78029 11 2.79999C11.0197 2.81969 11.0431 2.83531 11.0688 2.84597C11.0946 2.85663 11.1221 2.86212 11.15 2.86212C11.1779 2.86212 11.2054 2.85663 11.2312 2.84597C11.2569 2.83531 11.2803 2.81969 11.3 2.79999"
+              stroke="black"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M8 15.5V16.5C8 18.0913 8.63214 19.6174 9.75736 20.7426C10.8826 21.8679 12.4087 22.5 14 22.5V22.5C15.5913 22.5 17.1174 21.8679 18.2426 20.7426C19.3679 19.6174 20 18.0913 20 16.5V12.5"
+              stroke="black"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M20 12.5C21.1046 12.5 22 11.6046 22 10.5C22 9.39543 21.1046 8.5 20 8.5C18.8954 8.5 18 9.39543 18 10.5C18 11.6046 18.8954 12.5 20 12.5Z"
+              stroke="black"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <h4 class="font-bold text-[#101C45]">Holadok</h4>
+        </div>
+        <div class="flex items-center gap-[50px] font-sanspro text-black">
+          <a href="#" class="font-semibold text-[#101C45]">Home</a
+          ><a href="#">Features</a><a href="#">Blog</a><a href="#">About Us</a>
+        </div>
+        <div class="ml-auto mr-3 font-bold">
+          <button type="button" class="font-dm py-2 px-5 mr-5 text-[#101C45]">
+            Login</button
+          ><button
+            type="button"
+            class="font-dm py-2 px-5 border-[#101C45] border-2"
+          >
+            Book Now
+          </button>
+        </div>
+      </nav>
+      <main>
+        <div class="pt-32 max-w-fit">
+          <div class="max-w-[457px]">
+            <h1
+              class="text-5xl font-medium leading-[3.6rem] text-indigo-1000 font-dm"
+            >
+              Get the healthcare you need, when you need it.
+            </h1>
+            <p class="my-5 text-lg font-medium leading-7 text-indigo-950">
+              Manage all of your healthcare needs in one convenient place – from
+              booking appointments to tracking your health history.
+            </p>
+            <button type="button" class="py-4 text-white px-9 bg-indigo-950">
+              Book an Appointment
+            </button>
+          </div>
+        </div>
+        <div
+          class="absolute flex flex-col max-w-[330px] gap-3 p-5 bg-white rounded-lg shadow-lg right-96 top-32"
+        >
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2 font-medium">
+              <img
+                src="https://picsum.photos/300/300"
+                alt="avatar_testimonial"
+                class="object-cover w-12 rounded-full"
+              />
+              <h4>Jane Doe</h4>
+            </div>
+            <img src="./assets/images/quote.png" alt="quote" class="w-8" />
+          </div>
+          <p class="text-sm font-medium font-sanspro text-indigo-950">
+            “The doctor appointment app has been great for me. Scheduling
+            appointments and getting medication reminders is much easier, and I
+            love the option for virtual consultations. I'd recommend this app to
+            others.”
+          </p>
+        </div>
+        <img
+          src="./assets/images/rectangle.png"
+          alt="rectangle_pattern"
+          class="absolute top-0 right-0 -z-30"
+        />
+        <img
+          src="./assets/images/human.png"
+          alt="rectangle_pattern"
+          class="absolute h-screen top-10 right-10 -z-10"
+        />
+      </main>
+    </div>
+    <footer class="container flex gap-10 p-10 mx-auto text-white bg-indigo-950">
+      <div class="flex items-start gap-5">
+        <img src="./assets/images/calender.png" alt="test" />
+        <div class="max-w-[280px]">
+          <h1 class="mb-2 text-lg font-medium">
+            Online appointment scheduling
+          </h1>
+          <p class="text-gray-400 text-md">
+            Allows users to schedule appointments with their healthcare provider
+            through the app.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start gap-5">
+        <img src="./assets/images/alert.png" alt="test" />
+        <div class="max-w-[280px]">
+          <h1 class="mb-2 text-lg font-medium">Medication reminders</h1>
+          <p class="text-gray-400 text-md">
+            Allows users to schedule appointments with their healthcare provider
+            through the app.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start gap-5">
+        <img src="./assets/images/camera.png" alt="test" />
+        <div class="max-w-[280px]">
+          <h1 class="mb-2 text-lg font-medium">Virtual consultations</h1>
+          <p class="text-gray-400 text-md">
+            Allows users to schedule appointments with their healthcare provider
+            through the app.
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
